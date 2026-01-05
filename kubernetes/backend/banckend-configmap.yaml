@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: mongodb-url
+  namespace: muchtodo
+type: Opaque
+data:
+  mongo-url: bW9uZ29kYjovL3lhbm5iaWtvOnJvb3RAbW9uZ29kYjoyNzAxNy9tdWNoX3RvZG9fZGI/YXV0aFNvdXJjZT1hZG1pbg==
