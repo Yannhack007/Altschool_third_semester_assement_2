@@ -112,8 +112,8 @@ make run
 
 The server will start, and you should see log output in your terminal.
 
-* The API will be available at `http://localhost:8080`.
-* The interactive Swagger documentation will be at `http://localhost:8080/swagger/index.html`.
+* The API will be available at `http://localhost:3000`.
+* The interactive Swagger documentation will be at `http://localhost:3000/swagger/index.html`.
 
 ## Running Tests
 

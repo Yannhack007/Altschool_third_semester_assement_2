@@ -27,9 +27,13 @@ func LoadConfig(path string) (config Config, err error) {
 	viper.AutomaticEnv()
 
 	// Set default values
-	viper.SetDefault("PORT", "8080")
+	viper.SetDefault("PORT", "3000")
+	viper.SetDefault("MONGO_URI", "mongodb://yannbiko:root@mongodb:27017/much_todo_db?authSource=admin")
+	viper.SetDefault("DB_NAME", "much_todo_db")
 	viper.SetDefault("ENABLE_CACHE", false)
 	viper.SetDefault("JWT_EXPIRATION_HOURS", 72)
+	viper.SetDefault("LOG_LEVEL", "INFO")
+	viper.SetDefault("LOG_FORMAT", "json")
 
 	err = viper.ReadInConfig()
 	if err != nil {
